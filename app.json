@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mind/mind"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fa5558",
+    "navigationBarTitleText": "GT1SHOP",
+    "navigationBarTextStyle":"light"
+  },
+  "tabBar": {
+    "color": "#868e9e",
+    "selectedColor": "#121c32",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "common/hometo.png",
+      "selectedIconPath": "common/homego.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "活动",
+      "iconPath": "common/outto.png",
+      "selectedIconPath": "common/outgo.png"
+    },{
+      "pagePath": "pages/mind/mind",
+      "text": "我的",
+      "iconPath": "common/mindto.png",
+      "selectedIconPath": "common/mindgo.png"
+    }]
+  }
+}

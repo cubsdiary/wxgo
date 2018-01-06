@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+      <swiper indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class="banner-swiper">
+      <block wx:for="{{imgs}}" wx:key="index">
+        <swiper-item class="swiper-item">
+          <image src="{{'https://www.gt1.shop/api/common/download?id='+item.img}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper> 
+  </view>
+  <view class="menu">
+    <view class="flex-item">
+      <view class="img-font">
+        <image src="../../common/baoyang.png" class="menu-img"></image>
+        <view class="menu-font">保养</view>
+      </view>
+    </view>
+    <view class="flex-item">
+      <view class="img-font">
+        <image src="../../common/weixiu.png" class="menu-img"></image>
+        <view class="menu-font">维修</view>
+      </view>
+    </view>
+    <view class="flex-item" bindtap="goHelp">
+      <view class="img-font">
+        <image src="../../common/jiuyuan.png" class="menu-img"></image>
+        <view class="menu-font">救援</view>
+      </view>
+    </view>
+  </view>
+</view>
